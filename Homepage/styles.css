@@ -1,0 +1,39 @@
+.top-bar {
+    width: 100%;
+    height: 75px;
+    background-color: #ff8eea;
+    display: flex;
+    flex-direction: row;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8c008c;
+}
+
+.app-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #060306;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.search-bar input {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #060306;
+    padding: 5px;
+    font-size: 16px;
+}
