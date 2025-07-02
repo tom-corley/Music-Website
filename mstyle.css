@@ -117,3 +117,122 @@ header, footer {
     transition: 200ms;
     transition-property: width;
 }
+html {
+    height: 100%
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    font-family: sans-serif;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+div {
+    width: 100%;
+}
+
+body:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border: solid 60px;
+    border-top: solid 10vh;
+    border-bottom:solid 10vh;
+    border-color: rgb(230, 106, 164) rgb(103, 15, 72);
+    box-sizing: border-box;
+    background: rgb(182, 43, 131);
+    z-index: -1; 
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+p {
+    width: 95%;
+}
+
+.album-cover {
+    height: 150px;
+    width: 150px
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    height: 100%;
+    width: 20%;
+    text-align: center;
+}
+
+.left {
+    transform: rotate(180deg);
+}
+
+.time-rem {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    width: 100%
+}
+
+.mid {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.progress {
+    width: 80%;
+    height: 1rem;
+    position: relative;
+    background: #fefefe;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progress:after {
+    height: 100%;
+    content: "";
+    width: var(--progress, 0%);
+    position: absolute;
+    left:0;
+    top: 0;
+    background: #000;
+    transition: 200ms;
+    transition-property: width;
+}
